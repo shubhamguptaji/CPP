@@ -1,0 +1,30 @@
+class Shape{
+ public:
+ //CODE        
+};
+
+class Rectangle : public Shape{
+
+ public:
+  //CODE  
+};
+
+class Circle : public Shape{
+     
+  public:
+//CODE    
+};
+
+int main() {
+    Shape * ptr;
+    int choice;
+    cin >> choice;
+    
+    if (choice == 1)
+        ptr = new Rectangle();
+      else if(choice == 2)
+            ptr = new Circle();
+        
+    ptr->show();    
+    return 0;
+}
